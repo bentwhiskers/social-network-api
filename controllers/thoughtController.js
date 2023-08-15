@@ -6,7 +6,7 @@ module.exports = {
             const thoughts = await Thought.find();
             res.json(thoughts);
         } catch (err) {
-            resError(res, err);
+            resErr(res, err);
         }
     },
     
@@ -19,7 +19,7 @@ module.exports = {
                 res.json(thought);
             }
         } catch (err) {
-            resError(res, err);
+            resErr(res, err);
         }
     },
 
@@ -39,7 +39,7 @@ module.exports = {
                 res.json({ message: 'Thought was created!' });
             }
         } catch (err) {
-            resError(res, err);
+            resErr(res, err);
         }
     },
 
@@ -56,7 +56,7 @@ module.exports = {
               res.json(thought);
             }
           } catch (err) {
-            resError(res, err);
+            resErr(res, err);
         }
     },
 
@@ -71,7 +71,7 @@ module.exports = {
                 res.json({ message: 'Thought was deleted!' });
             }
         } catch (err) {
-            resError(res, err);
+            resErr(res, err);
         }
     },
      
@@ -90,7 +90,7 @@ module.exports = {
                 res.json(reaction);
             }
         } catch (err) {
-            resError(res, err);
+            resErr(res, err);
         }
     },
     
@@ -109,7 +109,7 @@ module.exports = {
                 res.json(reaction);
             }
         } catch (err) {
-            resError(res, err);
+            resErr(res, err);
         }
     },
 };
