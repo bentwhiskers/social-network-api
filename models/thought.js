@@ -33,7 +33,7 @@ const thoughtSchema = new mongoose.Schema(
     {
      thoughtText: {
         type: String,
-        required: 'Thought is required',
+        required: true,
         minlength: 1,
         maxlength: 280,
      },
@@ -61,6 +61,6 @@ thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
   
-const thought = model('thought', thoughtSchema);
+const Thought = model('Thought', thoughtSchema);
   
-module.exports = thought;
+module.exports = Thought;
