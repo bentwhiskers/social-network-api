@@ -17,7 +17,7 @@ const reactionSchema = new mongoose.Schema(
         },
         createdAt: {
             type: Date,
-            default: Date.now,
+            default: Date.now(),
             get: (timestamp) => dateFormat(timestamp),
         },
     },
@@ -39,7 +39,7 @@ const thoughtSchema = new mongoose.Schema(
      },
      createdAt: {
         type: Date,
-        default: Date.now,
+        default: Date.now(),
         get: (timestamp) => dateFormat(timestamp),
      },
      username: {
@@ -59,8 +59,8 @@ const thoughtSchema = new mongoose.Schema(
 
 thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
-  });
+});
   
-  const thought = model('thought', thoughtSchema);
+const thought = model('thought', thoughtSchema);
   
-  module.exports = thought;
+module.exports = thought;

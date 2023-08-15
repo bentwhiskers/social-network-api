@@ -6,13 +6,13 @@ const userSchema = new mongoose.Schema(
         type: String,
         unique: true,
         trim: true,
-        required: 'Username is required',
+        required: true,
     },
     email: {
         type: String,
         unique: true,
-        required: 'Username is required',
-        match: [/.+\@.+\..+/],
+        required: true,
+        match: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
     },
     thoughts: [
         {
