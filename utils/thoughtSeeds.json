@@ -1,14 +1,12 @@
 [
     {
-        "reactionId": "1",
-        "reactionBody": "Holy crow Batman!",
-        "username": "bentwhiskers",
-        "createdAt": ""
+        "thoughtText": "These are my thoughts!",
+        "createdAt": "",
+        "username": "bentwhiskers"
     },
     {
-        "reactionId": "2",
-        "reactionBody": "Jeepers!",
-        "username": "erica5eva",
-        "createdAt": ""
+        "thoughtText": "These are also my thoughts!",
+        "createdAt": "",
+        "username": "erica5eva"
     }
 ]
