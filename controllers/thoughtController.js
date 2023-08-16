@@ -1,4 +1,7 @@
 const { Thought, User } = require('../models');
+const resErr = (res, err) => {
+    return res.status(500).json(err.message);
+};
 
 module.exports = {
     async allThought(req, res) {
