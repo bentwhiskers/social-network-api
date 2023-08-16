@@ -13,7 +13,7 @@ This is the API for a social network application where users can share their tho
 ## Usage
 This application will not be deployed; view this walkthrough video that demonstrates the functionality of the routes:
 
-    🔹 
+    🔹 https://drive.google.com/file/d/1nBupn0RmR_d6N3H2ZawNtTgIUCy8Chpu/view 
     
 ## Credits
 
